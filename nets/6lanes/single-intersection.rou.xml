@@ -1,0 +1,32 @@
+<routes>
+    <!--west开始-->
+    <route id="routewn" edges="-gneE0 -gneE2"/>
+	   <!-- <flow id="flowwn" route="routewn" begin="0" end="100000" probability="0.2" departSpeed="max" departPos="base" departLane="best" vehsPerHour="200"/>-->
+
+    <flow id="flowwn" route="routewn" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="300"/>
+	<route id="routewe" edges="-gneE0 -gneE1"/>
+    <flow id="flowwe" route="routewe" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="750"/>
+	<route id="routews" edges="-gneE0 -gneE3"/>
+    <flow id="flowws" route="routews" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="450"/>
+	<!--east开始-->
+    <route id="routeen" edges="gneE1 -gneE2"/>
+    <flow id="flowen" route="routeen" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="450"/>
+	<route id="routeew" edges="gneE1 gneE0"/>
+    <flow id="flowew" route="routeew" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="750"/>
+	<route id="routees" edges="gneE1 -gneE3"/>
+    <flow id="flowes" route="routees" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="300"/>
+	<!--south开始-->
+    <route id="routese" edges="gneE3 -gneE1"/>
+    <flow id="flowse" route="routese" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="450"/>
+	<route id="routesn" edges="gneE3 -gneE2"/>
+    <flow id="flowsn" route="routesn" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="750"/>
+	<route id="routesw" edges="gneE3 gneE0"/>
+    <flow id="flowsw" route="routesw" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="300"/>
+	<!--north开始-->
+    <route id="routenw" edges="gneE2 gneE0"/>
+    <flow id="flownw" route="routenw" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="450"/>
+	<route id="routens" edges="gneE2 -gneE3"/>
+    <flow id="flowns" route="routens" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="750"/>
+	<route id="routene" edges="gneE2 -gneE1"/>
+    <flow id="flowne" route="routene" begin="0" end="8000" departSpeed="max" departPos="base" departLane="best" vehsPerHour="300"/>
+</routes>
